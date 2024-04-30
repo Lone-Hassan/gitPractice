@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+
+	<!--<groups>
+		<run>
+			<include name="itemcheck"></include>
+		</run>
+	</groups>-->
+	
+	<listeners>
+        <listener class-name="loneCreates.resources.Listeners" />
+        <listener class-name="loneCreates.resources.TestRetryAnalyzerListener"></listener>
+    </listeners>
+	<test thread-count="5" name="LoginTest">
+
+		<classes>
+			<class name="loneCreates.ValidLoginTest" />
+			<class name="loneCreates.InvalidLoginTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="openItems">
+		
+		<classes >
+			<class name="loneCreates.ItemsTest" />
+			
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
