@@ -6,7 +6,7 @@ public class gitPractice {
 		// TODO Auto-generated method stub
 		
 		System.out.println("project clooned succesfuly.... hurray!!! ");
-
+		System.out.println("work done from workspacce 1 to develop branch");
 	}
 
 }
